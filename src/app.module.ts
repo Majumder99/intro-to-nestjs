@@ -8,8 +8,8 @@ import { UserController } from './user/user.controller';
 import { SouravModule } from './sourav/sourav.module';
 
 @Module({
-  imports: [NinjasModule, UserModule, SouravModule],
-  controllers: [AppController, NinjasController, UserController],
+  imports: [NinjasModule],
+  controllers: [AppController, NinjasController],
   providers: [AppService],
 })
 export class AppModule {}
